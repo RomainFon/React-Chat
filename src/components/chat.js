@@ -29,7 +29,7 @@ class Chat extends Component {
                         </ul>
                     </div>
                     <div className="write-message">
-                        <input className="input-text-chat" type="text" name="text-message" placeholder="Entrer votre message"/>
+                        <input className="input-text-chat" type="text" name="text-message" placeholder="Entrer votre message" autoComplete="off"/>
                         <input onClick={(e) => {
                             e.preventDefault();
                             sendMessage(e.target.parentNode.querySelector('input[name=text-message]').value, userName);

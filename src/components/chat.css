@@ -1,5 +1,4 @@
 .chat{
-    margin-top: 60px;
     width: 50%;
     position: absolute;
     left: 50%;
@@ -64,4 +63,3 @@
 .message-list{
     padding: 0;
 }
-

@@ -13,8 +13,7 @@ class FormLogin extends Component {
     login(login, event){
         const email = event.target.parentElement.querySelector('input[name=email]').value
         if(email !== ''){
-            const password = event.target.parentElement.querySelector('input[name=password]').value
-            login(email, password)
+            login(email)
 
             const url = "http://demo8606321.mockable.io/login"
             fetch(url).then(rawData => {
@@ -40,7 +39,7 @@ class FormLogin extends Component {
                 <div className="formLogin">
                     <h2>Login</h2>
                     {this.state.errorLog && <h4 className="erreur-log">Username obligatoire</h4>}
-                    <input type="email" name="email" placeholder="Votre username"/>
+                    <input type="email" name="email" placeholder="Votre username" autoComplete="off"/>
                     <ClientConsumer>
                         {({isLogged, login, logout}) => (
                             <button className="button-login" onClick={(event) => isLogged ? logout() : this.login(login, event)}>Login</button>

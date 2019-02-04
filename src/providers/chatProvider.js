@@ -7,8 +7,7 @@ const ChatContext = React.createContext()
 export class ChatProviderClass extends Component{
     constructor(props){
         super(props)
-        //let test = new Message('message' ,'Romain', Date.now())
-        this.socket = window.io.connect('http://172.30.236.95:4000');
+        this.socket = window.io.connect('http://localhost:4000');
 
         this.socket.on('chat message', this.onMessage.bind(this))
 
