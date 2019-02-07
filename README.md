@@ -2,7 +2,7 @@
     React JS v16.7
 ## Demo
 
-![alt text](./public/demo.gif "Football manager preview")
+![alt text](./public/demo.gif "Demo chat preview")
 
 ## Quick Start
 
